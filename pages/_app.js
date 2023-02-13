@@ -1,11 +1,11 @@
+import Script from 'next/script'
 import "../styles/globals.css";
-import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Script defer data-domain="nextjs-banana-template.vercel.app" src="https://data.lucata.co/js/script.js" />
       <Component {...pageProps} />
-      <Analytics />
     </>
   )
 }
